@@ -1,5 +1,5 @@
 SELECT *
-FROM jobs
-WHERE min_salary > 1000
-ORDER BY max_salary DESC
-LIMIT 3;
+FROM job_postings_fact
+WHERE job_title_short = 'Data Scientist'
+ORDER BY job_id 
+LIMIT 100
